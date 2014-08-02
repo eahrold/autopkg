@@ -82,8 +82,7 @@ def _dataToPlist(data):
                          data, NSPropertyListMutableContainersAndLeaves, None, None))
     if error:
         raise NSPropertyListSerializationException(error)
-    else:
-        return plistObject
+    return plistObject
 
 
 def _plistToData(plistObject):
